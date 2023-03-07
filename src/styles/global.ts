@@ -6,6 +6,11 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+
 body {
     background: ${({ theme }) => theme.colors.background};
     -webkit-font-smoothing: antialiased;
@@ -13,7 +18,7 @@ body {
 
 body, input, textarea, button {
     font-family: ${({ theme }) => theme['font-family']};
-    font-size: ${({ theme }) => theme.Typography.body};
+    font-size: 1.5rem;
 }
 
 a {
