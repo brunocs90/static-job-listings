@@ -8,7 +8,8 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 body {
@@ -18,7 +19,6 @@ body {
 
 body, input, textarea, button {
     font-family: ${({ theme }) => theme['font-family']};
-    font-size: 1.5rem;
 }
 
 a {

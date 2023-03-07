@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import background from '../../assets/bg-header-desktop.svg';
+import background from '/images/bg-header-desktop.svg';
 
 export const HeaderContainer = styled.header`
     width: 100%;
-    height: 156px;
+    height: 10rem;
     background-color: ${({ theme }) => theme.colors['desaturated-dark']};
     background-image: url(${background});
     background-position-x: center;
