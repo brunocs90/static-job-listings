@@ -1,4 +1,4 @@
-import { DescriptionContainer, JobContainer, Logo } from './styles';
+import { DescriptionContainer, JobContainer, Logo, TagContainer } from './styles';
 
 export interface IJob {
     id: number;
@@ -17,6 +17,8 @@ export interface IJob {
 }
 
 export default function Job(item: IJob) {
+    let keywords = [item.role, item.level, ...item.languages, ...item.tools];
+    console.log(keywords);
     return (
         <JobContainer>
             <Logo src={item.logo} />
@@ -37,6 +39,11 @@ export default function Job(item: IJob) {
                     <span>{item.location}</span>
                 </div>
             </DescriptionContainer>
+            <TagContainer>
+                {keywords.map((key, id) => (
+                    <span key={id}>{key}</span>
+                ))}
+            </TagContainer>
         </JobContainer>
     );
 }

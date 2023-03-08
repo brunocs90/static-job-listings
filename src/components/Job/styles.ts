@@ -74,3 +74,33 @@ export const DescriptionContainer = styled.div`
         }
     }
 `;
+
+export const TagContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    span {
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+        &:hover {
+            background-color: ${({ theme }) => theme.colors['desaturated-dark']};
+            color: #fff;
+        }
+
+        background-color: ${({ theme }) => theme.colors['desaturated-dark-opacity']};
+        color: ${({ theme }) => theme.colors['desaturated-dark']};
+
+        font-weight: 700;
+        font-size: 16px;
+        /* identical to box height, or 150% */
+
+        letter-spacing: -0.123077px;
+
+        padding: 0.57rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+`;

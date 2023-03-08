@@ -1,6 +1,7 @@
 export const defaultTheme = {
     colors: {
         'desaturated-dark': '#5CA5A5',
+        'desaturated-dark-opacity': 'hsla(180, 29%, 50%, 0.1)',
         background: '#EFFAFA',
         'dark-grayish': '#7C8F8F',
         'very-dark-grayish': '#2B3939',
