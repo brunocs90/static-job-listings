@@ -81,6 +81,16 @@ export const TagContainer = styled.div`
     justify-content: space-between;
 
     span {
+        background-color: ${({ theme }) => theme.colors['desaturated-dark-opacity']};
+        color: ${({ theme }) => theme.colors['desaturated-dark']};
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: -0.123077px;
+
+        padding: 0.57rem;
+        border-radius: 5px;
+        cursor: pointer;
+
         &:not(:last-child) {
             margin-right: 1rem;
         }
@@ -89,18 +99,5 @@ export const TagContainer = styled.div`
             background-color: ${({ theme }) => theme.colors['desaturated-dark']};
             color: #fff;
         }
-
-        background-color: ${({ theme }) => theme.colors['desaturated-dark-opacity']};
-        color: ${({ theme }) => theme.colors['desaturated-dark']};
-
-        font-weight: 700;
-        font-size: 16px;
-        /* identical to box height, or 150% */
-
-        letter-spacing: -0.123077px;
-
-        padding: 0.57rem;
-        border-radius: 5px;
-        cursor: pointer;
     }
 `;
