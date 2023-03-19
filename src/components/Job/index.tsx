@@ -1,24 +1,13 @@
+import { IJob } from '../Interfaces';
 import { DescriptionContainer, JobContainer, Logo, TagContainer } from './styles';
 
-export interface IJob {
-    id: number;
-    company: string;
-    logo: string;
-    new: boolean;
-    featured: boolean;
-    position: string;
-    role: string;
-    level: string;
-    postedAt: string;
-    contract: string;
-    location: string;
-    languages: string[];
-    tools: string[];
+interface JobProps {
+    item: IJob;
+    setFilterKeywords: (keyword: string) => void;
 }
 
-export default function Job(item: IJob) {
+export default function Job({ item, setFilterKeywords }: JobProps) {
     let keywords = [item.role, item.level, ...item.languages, ...item.tools];
-    console.log(keywords);
     return (
         <JobContainer>
             <Logo src={item.logo} />
@@ -41,7 +30,9 @@ export default function Job(item: IJob) {
             </DescriptionContainer>
             <TagContainer>
                 {keywords.map((key, id) => (
-                    <span key={id}>{key}</span>
+                    <span key={id} onClick={() => setFilterKeywords(key)}>
+                        {key}
+                    </span>
                 ))}
             </TagContainer>
         </JobContainer>
