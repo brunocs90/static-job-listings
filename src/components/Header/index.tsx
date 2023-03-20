@@ -1,5 +1,14 @@
+import Filter from '../Filter';
 import { HeaderContainer } from './styles';
 
-export default function Header() {
-    return <HeaderContainer />;
+interface HeaderProps {
+    keywords: string[];
+}
+
+export default function Header({ keywords }: HeaderProps) {
+    return (
+        <HeaderContainer>
+            <Filter keywords={keywords} />
+        </HeaderContainer>
+    );
 }

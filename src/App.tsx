@@ -8,10 +8,9 @@ import data from '../data.json';
 import Jobs from './components/Jobs';
 
 export function App() {
-    const [filterKeywords, setFilterKeywords] = useState(['']);
+    const [filterKeywords, setFilterKeywords] = useState<string[]>([]);
 
     function addFilterKeywords(keyword: string) {
-        console.log('estou logando essas informações aqui:', keyword);
         if (!filterKeywords.includes(keyword)) {
             setFilterKeywords([...filterKeywords, keyword]);
         }
@@ -20,7 +19,7 @@ export function App() {
     return (
         <ThemeProvider theme={defaultTheme}>
             <GlobalStyle />
-            <Header />
+            <Header keywords={filterKeywords} />
             <Jobs data={data} setFilterKeywords={addFilterKeywords} />
         </ThemeProvider>
     );
