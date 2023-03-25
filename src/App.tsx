@@ -16,10 +16,19 @@ export function App() {
         }
     }
 
+    function removeKeyword(keyword: string) {
+        const newKeyword = filterKeywords.filter(tag => tag !== keyword);
+        setFilterKeywords(newKeyword);
+    }
+
+    function clearKeywords() {
+        setFilterKeywords([]);
+    }
+
     return (
         <ThemeProvider theme={defaultTheme}>
             <GlobalStyle />
-            <Header keywords={filterKeywords} />
+            <Header keywords={filterKeywords} removeKeyword={removeKeyword} clearKeywords={clearKeywords} />
             <Jobs data={data} setFilterKeywords={addFilterKeywords} />
         </ThemeProvider>
     );

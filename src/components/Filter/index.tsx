@@ -1,26 +1,32 @@
 import { CloseIcon } from './CloseIcon';
-import { FilterContainer } from './styles';
+import { FilterContainer, FilterPanel } from './styles';
 
 interface FilterProps {
     keywords: string[];
+    removeKeyword: (keyword: string) => void;
+    clearKeywords: () => void;
 }
 
-export default function Filter({ keywords }: FilterProps) {
+export default function Filter({ keywords, removeKeyword, clearKeywords }: FilterProps) {
     return (
         <FilterContainer>
-            <ul>
-                {keywords.map((key, id) => {
-                    return (
-                        <li key={id}>
-                            {key}
-                            <button className="close">
+            <FilterPanel>
+                <div>
+                    {keywords.map((key, id) => (
+                        <div key={id}>
+                            <span>{key}</span>
+                            <button className="close" onClick={() => removeKeyword(key)}>
                                 <CloseIcon />
                             </button>
-                        </li>
-                    );
-                })}
-                <button className="clear">Clear</button>
-            </ul>
+                        </div>
+                    ))}
+                </div>
+                {keywords.length > 0 && (
+                    <button className="clear" onClick={() => clearKeywords()}>
+                        Clear
+                    </button>
+                )}
+            </FilterPanel>
         </FilterContainer>
     );
 }
