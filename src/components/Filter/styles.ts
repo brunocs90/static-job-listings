@@ -15,7 +15,6 @@ export const FilterContainer = styled.div`
 
 export const FilterPanel = styled.div`
     width: 70vw;
-
     display: flex;
     flex-direction: row;
     padding: 1.5rem 2rem;
@@ -30,23 +29,30 @@ export const FilterPanel = styled.div`
         display: flex;
         flex-wrap: wrap;
 
-        div {
+        .tag-close {
+            display: flex;
             &:not(:last-child) {
                 margin-right: 1rem;
             }
 
             span {
+                display: flex;
+                align-items: center;
+                height: 32px;
                 background-color: ${({ theme }) => theme.colors['desaturated-dark-opacity']};
                 color: ${({ theme }) => theme.colors['desaturated-dark']};
                 font-weight: 700;
                 font-size: 16px;
                 letter-spacing: -0.123077px;
+                padding: 0 10px;
 
-                padding: 0.57rem;
                 border-radius: 5px 0 0 5px;
             }
 
             .close {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 32px;
                 height: 32px;
                 cursor: pointer;
@@ -68,7 +74,6 @@ export const FilterPanel = styled.div`
 
     .clear {
         .btn-clear {
-            border: solid blue;
             background-color: transparent;
             border: none;
             color: ${({ theme }) => theme.colors['dark-grayish']};
@@ -83,6 +88,6 @@ export const FilterPanel = styled.div`
     }
 
     @media (max-width: 768px) {
-        padding: 1.5rem 0.5rem;
+        padding: 1.5rem 1rem;
     }
 `;

@@ -13,7 +13,7 @@ export default function Filter({ keywords, removeKeyword, clearKeywords }: Filte
             <FilterPanel>
                 <div className="tags">
                     {keywords.map((key, id) => (
-                        <div key={id}>
+                        <div className="tag-close" key={id}>
                             <span>{key}</span>
                             <button className="close" onClick={() => removeKeyword(key)}>
                                 <CloseIcon />
