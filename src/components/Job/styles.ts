@@ -159,6 +159,7 @@ export const TagContainer = styled.div`
         &:not(:last-child) {
             margin-right: 1rem;
         }
+        margin: 0.5rem 0;
 
         &:hover {
             background-color: ${({ theme }) => theme.colors['desaturated-dark']};

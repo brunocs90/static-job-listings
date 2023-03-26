@@ -31,9 +31,7 @@ export const FilterPanel = styled.div`
 
         .tag-close {
             display: flex;
-            &:not(:last-child) {
-                margin-right: 1rem;
-            }
+            margin: 0.5rem 1rem 0.5rem 0;
 
             span {
                 display: flex;
@@ -77,6 +75,10 @@ export const FilterPanel = styled.div`
             background-color: transparent;
             border: none;
             color: ${({ theme }) => theme.colors['dark-grayish']};
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: -0.123077px;
             right: 1.5rem;
             cursor: pointer;
 
@@ -89,5 +91,11 @@ export const FilterPanel = styled.div`
 
     @media (max-width: 768px) {
         padding: 1.5rem 1rem;
+
+        .tags {
+            .tag-close {
+                margin: 0.5rem 0.5rem 0.5rem 0;
+            }
+        }
     }
 `;
