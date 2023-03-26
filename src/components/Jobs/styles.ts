@@ -6,7 +6,6 @@ export const JobsContainer = styled.div`
     align-items: center;
     margin-top: calc(2vw + 2rem);
 
-    @media (max-width: 375px) {
-        /* border: solid white; */
+    @media (max-width: 768px) {
     }
 `;

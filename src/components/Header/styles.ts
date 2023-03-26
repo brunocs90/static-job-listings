@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import background from '/images/bg-header-desktop.svg';
+import { default as background, default as mobile } from '/images/bg-header-desktop.svg';
 
 export const HeaderContainer = styled.header`
     width: 100%;
@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
     background-position-x: center;
     background-size: cover;
 
-    @media (max-width: 375px) {
-        /* border: solid white; */
+    @media (max-width: 768px) {
+        background-image: url(${mobile});
     }
 `;

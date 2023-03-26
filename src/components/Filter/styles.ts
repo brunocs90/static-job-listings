@@ -77,7 +77,6 @@ export const FilterPanel = styled.div`
         }
     }
 
-    @media (max-width: 375px) {
-        /* border: solid white; */
+    @media (max-width: 768px) {
     }
 `;

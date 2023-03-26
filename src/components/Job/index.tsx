@@ -29,6 +29,7 @@ export default function Job({ item, setFilterKeywords }: JobProps) {
                     <span className="dot">&nbsp;•&nbsp;</span>
                     <span>{item.location}</span>
                 </div>
+                <div className="separator"></div>
             </DescriptionContainer>
             <TagContainer>
                 {keywords.map((key, id) => (
