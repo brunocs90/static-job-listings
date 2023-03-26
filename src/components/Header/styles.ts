@@ -9,10 +9,7 @@ export const HeaderContainer = styled.header`
     background-position-x: center;
     background-size: cover;
 
-    @media (max-width: 768px) {
-        /* border: solid white; */
-    }
-    @media (max-width: 655px) {
+    @media (max-width: 375px) {
         /* border: solid white; */
     }
 `;

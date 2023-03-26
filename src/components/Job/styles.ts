@@ -17,12 +17,20 @@ export const JobContainer = styled.div`
     &.featured {
         border-left: 5px solid ${({ theme }) => theme.colors['desaturated-dark']};
     }
+
+    @media (max-width: 375px) {
+        /* border: solid white; */
+    }
 `;
 
 export const Logo = styled.img`
     display: flex;
     align-items: center;
-    padding-right: 1.5rem; ;
+    padding-right: 1.5rem;
+
+    @media (max-width: 375px) {
+        /* border: solid white; */
+    }
 `;
 
 export const DescriptionContainer = styled.div`
@@ -78,6 +86,10 @@ export const DescriptionContainer = styled.div`
             padding: 0px 10px;
         }
     }
+
+    @media (max-width: 375px) {
+        /* border: solid white; */
+    }
 `;
 
 export const TagContainer = styled.div`
@@ -104,5 +116,9 @@ export const TagContainer = styled.div`
             background-color: ${({ theme }) => theme.colors['desaturated-dark']};
             color: #fff;
         }
+    }
+
+    @media (max-width: 375px) {
+        /* border: solid white; */
     }
 `;

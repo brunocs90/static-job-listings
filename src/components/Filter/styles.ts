@@ -8,12 +8,12 @@ export const FilterContainer = styled.div`
 
     justify-content: flex-end;
 
-    /* border: solid red; */
+    @media (max-width: 375px) {
+        /* border: solid white; */
+    }
 `;
 
 export const FilterPanel = styled.div`
-    /* border: solid blue; */
-
     width: 70vw;
     height: 72px;
 
@@ -27,8 +27,6 @@ export const FilterPanel = styled.div`
     background-color: #fff;
 
     div {
-        /* border: solid green; */
-
         display: flex;
         flex-wrap: wrap;
 
@@ -77,5 +75,9 @@ export const FilterPanel = styled.div`
             color: ${({ theme }) => theme.colors['desaturated-dark']};
             text-decoration: underline;
         }
+    }
+
+    @media (max-width: 375px) {
+        /* border: solid white; */
     }
 `;

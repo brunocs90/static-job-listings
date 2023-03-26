@@ -5,4 +5,8 @@ export const JobsContainer = styled.div`
     flex-direction: column;
     align-items: center;
     margin-top: calc(2vw + 2rem);
+
+    @media (max-width: 375px) {
+        /* border: solid white; */
+    }
 `;
