@@ -12,6 +12,11 @@ export const JobContainer = styled.div`
     margin: 1.3rem 0;
     position: relative;
     box-shadow: 0px 4px 6px 4px rgba(91, 164, 164, 0.2);
+
+    //https://css-tricks.com/the-sass-ampersand/#:~:text=The%20%26%20comes%20in%20handy%20when,the%20parent%20selector%20when%20nesting.
+    &.featured {
+        border-left: 5px solid ${({ theme }) => theme.colors['desaturated-dark']};
+    }
 `;
 
 export const Logo = styled.img`
@@ -37,7 +42,7 @@ export const DescriptionContainer = styled.div`
             color: #fff;
             background-color: ${({ theme }) => theme.colors['desaturated-dark']};
             border-radius: 1rem;
-            padding: 5.5px 8.38px;
+            padding: 7px 8.39px 4.2px;
             font-size: 14px;
             font-weight: 700;
             text-transform: uppercase;

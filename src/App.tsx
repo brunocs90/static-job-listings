@@ -29,7 +29,7 @@ export function App() {
         <ThemeProvider theme={defaultTheme}>
             <GlobalStyle />
             <Header keywords={filterKeywords} removeKeyword={removeKeyword} clearKeywords={clearKeywords} />
-            <Jobs data={data} setFilterKeywords={addFilterKeywords} />
+            <Jobs data={data} keywords={filterKeywords} setFilterKeywords={addFilterKeywords} />
         </ThemeProvider>
     );
 }

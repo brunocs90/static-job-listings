@@ -7,9 +7,11 @@ interface JobProps {
 }
 
 export default function Job({ item, setFilterKeywords }: JobProps) {
-    let keywords = [item.role, item.level, ...item.languages, ...item.tools];
+    const keywords = [item.role, item.level, ...item.languages, ...item.tools];
+    const feature = item.featured;
+
     return (
-        <JobContainer>
+        <JobContainer className={feature ? 'featured' : ''}>
             <Logo src={item.logo} />
             <DescriptionContainer>
                 <div className="company">
