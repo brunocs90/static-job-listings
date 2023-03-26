@@ -142,8 +142,6 @@ export const TagContainer = styled.div`
     flex-wrap: wrap;
     justify-content: flex-start;
 
-    border: solid red;
-
     span {
         background-color: ${({ theme }) => theme.colors['desaturated-dark-opacity']};
         color: ${({ theme }) => theme.colors['desaturated-dark']};
