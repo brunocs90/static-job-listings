@@ -22,9 +22,7 @@ export default function Jobs({ data, keywords, setFilterKeywords }: JobsProps) {
     }
 
     useEffect(() => {
-        if (keywords.length > 0) {
-            dataFiltered();
-        }
+        dataFiltered();
     }, [keywords]);
 
     return (

@@ -11,7 +11,7 @@ export default function Filter({ keywords, removeKeyword, clearKeywords }: Filte
     return (
         <FilterContainer>
             <FilterPanel>
-                <div>
+                <div className="tags">
                     {keywords.map((key, id) => (
                         <div key={id}>
                             <span>{key}</span>
@@ -21,11 +21,13 @@ export default function Filter({ keywords, removeKeyword, clearKeywords }: Filte
                         </div>
                     ))}
                 </div>
-                {keywords.length > 0 && (
-                    <button className="clear" onClick={() => clearKeywords()}>
-                        Clear
-                    </button>
-                )}
+                <div className="clear">
+                    {keywords.length > 0 && (
+                        <button className="btn-clear" onClick={() => clearKeywords()}>
+                            Clear
+                        </button>
+                    )}
+                </div>
             </FilterPanel>
         </FilterContainer>
     );

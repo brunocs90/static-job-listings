@@ -18,6 +18,10 @@ export const JobContainer = styled.div`
         border-left: 5px solid ${({ theme }) => theme.colors['desaturated-dark']};
     }
 
+    .separator {
+        border-bottom: none;
+    }
+
     @media (max-width: 768px) {
         min-width: 327px;
         display: flex;
@@ -28,6 +32,12 @@ export const JobContainer = styled.div`
         border-radius: 5px;
 
         margin: 3rem 0;
+
+        .separator {
+            width: 100%;
+            border-bottom: 1px solid #b7c4c4;
+            margin: 1rem 0rem;
+        }
     }
 `;
 
@@ -98,10 +108,6 @@ export const DescriptionContainer = styled.div`
         }
     }
 
-    .separator {
-        border-bottom: none;
-    }
-
     @media (max-width: 768px) {
         .company {
             .cname {
@@ -128,11 +134,6 @@ export const DescriptionContainer = styled.div`
             .dot {
                 padding: 0px 3px;
             }
-        }
-
-        .separator {
-            border-bottom: 1px solid #b7c4c4;
-            margin: 1rem 0rem;
         }
     }
 `;
