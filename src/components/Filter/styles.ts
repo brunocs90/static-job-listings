@@ -83,6 +83,6 @@ export const FilterPanel = styled.div`
     }
 
     @media (max-width: 768px) {
-        padding: 1.5rem 1rem;
+        padding: 1.5rem 0.5rem;
     }
 `;
