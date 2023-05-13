@@ -49,8 +49,6 @@ Use the [data.json](./data.json) file to pull the data and then dynamically add 
 
 To add a filter, the user needs to click on the tablets on the right-side of the listing on desktop or the bottom on mobile. For each filter added, only listings containing all selected filters should be returned.
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
-
 ## 💻 Technologies
 
 This project was developed using the following technologies:
