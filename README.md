@@ -6,7 +6,6 @@
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-setup">Setup</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-structure">Structure</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-license">License</a>
 </p>
 <br>
@@ -54,7 +53,7 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ## 💻 Technologies
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was developed using the following technologies:
 
 -   [TypeScript](https://www.typescriptlang.org/)
 -   [React](https://pt-br.reactjs.org/)
@@ -74,8 +73,6 @@ Next, run the command:
 ```bash
 npm run dev
 ```
-
-## 📁 Structure
 
 ## 📝 License
 
