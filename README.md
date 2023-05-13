@@ -3,12 +3,12 @@
 </h1>
 
 <p align="center">
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-setup">Setup</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-structure">Structure</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-license">License</a>
 </p>
-
 <br>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 <br>
 
-## 💻 Projeto
+## 🚀 Project
 
 Your challenge is to build out this job listing page and get it looking as close to the design as possible [Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt).
 
@@ -52,7 +52,7 @@ To add a filter, the user needs to click on the tablets on the right-side of the
 
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
-## 🚀 Tecnologias
+## 💻 Technologies
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -62,24 +62,25 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 -   [Vite](https://vitejs.dev/)
 -   [Vercel](https://vercel.com/)
 
-## 📥 Instalação
+## 📥 Setup
 
-Faça um clone desse repositório e acesse o diretório. Em instale todas as dependências com o seguinte comando:
+Clone this repository and navigate to the directory. Then, install all dependencies with the following command:
 
 ```bash
 npm i
 ```
-
-Em seguida execute o comando
+Next, run the command:
 
 ```bash
 npm run dev
 ```
 
-## :memo: Licença
+## 📁 Structure
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+## 📝 License
+
+This project is licensed under the MIT license. See the [LICENSE](LICENSE.md) file for more details.
 
 ---
 
-**Desenvolvido por [Bruno César](https://github.com/brunocs90).**
+**Developed by [Bruno César](https://github.com/brunocs90).**
